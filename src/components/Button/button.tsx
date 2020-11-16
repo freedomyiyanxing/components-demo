@@ -27,8 +27,6 @@ const Button: React.FC<ButtonProps> = (props) => {
     disabled: btnType === 'link' && disabled,
   });
 
-  console.log(classes);
-
   if (btnType === 'link' && href) {
     return (
       <a {...reset} className={classes} href={href}>
